@@ -51,6 +51,14 @@ Architecture
 - `lib/widgets/` — reusable widgets
 
 
+Learning Resources
+------------
+📚 **Want to learn about Hive adapters?** Check out these guides:
+- **[HIVE_ADAPTER_GUIDE.md](HIVE_ADAPTER_GUIDE.md)** — Comprehensive guide explaining how Hive adapters work with step-by-step examples
+- **[HIVE_QUICK_REFERENCE.md](HIVE_QUICK_REFERENCE.md)** — Quick reference with templates and common patterns
+- **Code comments** — The code now includes detailed educational comments explaining how everything works
+
+
 Packages used
 ------------
 - hive, hive_flutter — local database

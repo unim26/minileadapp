@@ -13,20 +13,35 @@ import 'theme/app_theme.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Initialize Hive
+  // ============================================================================
+  // HIVE INITIALIZATION PROCESS
+  // ============================================================================
+  // This is the standard 3-step process to set up Hive in a Flutter app:
+  
+  // Step 1: Initialize Hive with Flutter-specific path handling
+  // This sets up Hive to store data in the correct app directory
   await Hive.initFlutter();
 
-  // Register Hive adapters
+  // Step 2: Register all custom TypeAdapters
+  // IMPORTANT: Adapters must be registered BEFORE opening boxes that use them
+  // Each adapter teaches Hive how to serialize/deserialize a custom type
   Hive.registerAdapter(LeadModelAdapter());
-  // open boxes early
-  await Hive.openBox(LeadStorage.boxName);
-  await Hive.openBox(SettingsStorage.boxName);
+  // Note: Primitive types (String, int, bool) don't need adapters
+  
+  // Step 3: Open the Hive boxes (similar to opening database tables)
+  // A "box" is like a key-value store or table in traditional databases
+  await Hive.openBox(LeadStorage.boxName);     // Box for storing LeadModel objects
+  await Hive.openBox(SettingsStorage.boxName); // Box for storing app settings (theme)
 
-  // Initialize storage instances
-  final storage = await LeadStorage.init();
-  final settings = await SettingsStorage.init();
+  // ============================================================================
+  // STORAGE LAYER INITIALIZATION
+  // ============================================================================
+  // Create wrapper classes that provide a clean API over the raw Hive boxes
+  // These wrappers handle CRUD operations and error handling
+  final storage = await LeadStorage.init();     // Manages lead data
+  final settings = await SettingsStorage.init(); // Manages app settings
 
-  // Run the app
+  // Run the app with the storage instances
   runApp(MainApp(storage: storage, settings: settings));
 }
 
