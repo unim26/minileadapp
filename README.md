@@ -53,10 +53,17 @@ Architecture
 
 Learning Resources
 ------------
-📚 **Want to learn about Hive adapters?** Check out these guides:
-- **[HIVE_ADAPTER_GUIDE.md](HIVE_ADAPTER_GUIDE.md)** — Comprehensive guide explaining how Hive adapters work with step-by-step examples
-- **[HIVE_QUICK_REFERENCE.md](HIVE_QUICK_REFERENCE.md)** — Quick reference with templates and common patterns
+📚 **Want to learn about Hive adapters?** 
+
+**👉 Start here: [LEARNING_PATH.md](LEARNING_PATH.md)** - Choose your learning style and get started!
+
+**Detailed guides:**
+- **[HIVE_ADAPTER_GUIDE.md](HIVE_ADAPTER_GUIDE.md)** — Comprehensive guide explaining how Hive adapters work with step-by-step examples (in-depth learning)
+- **[HIVE_QUICK_REFERENCE.md](HIVE_QUICK_REFERENCE.md)** — Quick reference with templates and common patterns (quick lookup)
+- **[HIVE_VISUAL_GUIDE.md](HIVE_VISUAL_GUIDE.md)** — Visual diagrams showing how data flows through the system (visual learning)
 - **Code comments** — The code now includes detailed educational comments explaining how everything works
+
+All documentation includes practical examples, best practices, and hands-on exercises!
 
 
 Packages used
