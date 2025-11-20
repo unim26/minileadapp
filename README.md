@@ -15,8 +15,8 @@ Features implemented:
 
 How to run
 ---------
-1. Install Flutter (stable) and ensure `flutter` is on your PATH.
-2. From the project root run:
+- Install Flutter (stable) and ensure `flutter` is on your PATH.
+
 
 ```bash
 git clone https://github.com/unim26/minileadapp.git
@@ -50,11 +50,13 @@ Architecture
 - `lib/screens/` — UI screens: list, add/edit, detail
 - `lib/widgets/` — reusable widgets
 
+
 Packages used
 ------------
 - hive, hive_flutter — local database
 - flutter_bloc — Cubit state management
 - equatable — value equality for state
+
 
 Notes
 ------------
@@ -63,10 +65,11 @@ Notes
 - images, videos and release apk is uploded to google drive and can be accessed through provided link
 
 
+
 Google drive link
 ------------
 
-[a link](https://drive.google.com/drive/folders/1cuI7BvEURVwwQ6BXrB3yeP63HujB6upz?usp=drive_link)
+[Drive (Abhishek Kumar)](https://drive.google.com/drive/folders/1cuI7BvEURVwwQ6BXrB3yeP63HujB6upz?usp=drive_link)
 
 
 
